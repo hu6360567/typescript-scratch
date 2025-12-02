@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    /* 基础配置 */
+    "target": "ES2022",                                  /* 编译目标为较新的 JS 版本 */
+    "module": "NodeNext",                                /* 使用现代 Node 模块系统 */
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,                             /* 允许默认导入非 ESM 模块 */
+    "forceConsistentCasingInFileNames": true,            /* 强制文件名大小写一致 */
+
+    /* 类型检查 (Strict Mode) */
+    "strict": true,                                      /* 开启严格模式 */
+    "noImplicitReturns": true,                           /* 也就是每个分支都必须有返回值 */
+    "noUnusedLocals": true,                              /* 报错：定义了但未使用的变量 */
+    "skipLibCheck": true,                                /* 跳过 node_modules 的类型检查以提升速度 */
+
+    /* 路径配置 */
+    "rootDir": "./src",                                  /* 源码目录 */
+    "outDir": "./dist"                                   /* 输出目录 */
+  },
+  "include": ["src/**/*", "tests/**/*"],                 /* 包含源码和测试目录 */
+  "exclude": ["node_modules", "dist"]
+}
